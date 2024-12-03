@@ -35,7 +35,7 @@ jobs:
       shell: bash
       run: |
         mkdir -p $BUILD_DIR
-        emcc -sMODULARIZE=1 -sEXPORT_NAME=lib --js-library=./src/lib.js -o $BUILD_DIR/lib.js ./src/lib.c
+        emcc -sMODULARIZE=1 -sEXPORT_NAME=lib --js-library=./src/lib.js -v -o $BUILD_DIR/lib.js ./src/lib.c
 
     - name: List
       run: |
